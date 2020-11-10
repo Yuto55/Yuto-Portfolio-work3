@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@media screen and (min-width:900px) {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    width: 100%;
+    font-size: clamp(14px, 15px, 17px);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header {
+    border-top: 3px solid #666;
+}
+
+header h1 {
+    font-size: 2.5vw;
+    line-height: 2;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+}
+    
+.home a {
+    text-decoration: none;
+    color: #000;
+    }
+    
+.home:hover {
+    opacity: 0.8;
+    }    
+
+
+ header ul {
+    display: flex;
+     list-style-type: none;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+header ul li {
+    font-size: 17px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1vh 0;
+    width: calc(100%/5);
+    margin: 0 auto;
+}
+
+.current {
+    background-color:  #d3d3d3;   
+    }
+
+.current:hover a {
+    color: #eee;
+    }    
+
+header ul li:first-child {
+    border-left: none;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+header ul a:hover {
+    color: #ccc;
+}
+    
+.fee-flame {
+    width: 90%;
+    margin: 3vh auto;
+    }
+    
+.fee-title {
+    background-color: #8fbc8f;
+    padding: 15vh 6.5vw;
+    margin-bottom: 8vh;
+    font-size: 40px;
+    }
+    
+.point {
+        font-weight: bold;
+        padding: 4vh 0vw;
+        font-size: 20px;
+        text-align: left;
+        border-bottom: 2px solid #666;
+    }
+
+.fee-flame-box p {
+        margin: 3vh 0vw;
+    }
+    
+
+.fee-left {
+        margin-left: 1.2vw;
+    }
+    
+.fee-link {
+    color: #000;    
+    }
+    
+.fee-link:hover {
+    color: #666;
+    }
+    
+.fee-flame table {
+    margin: 4vh 0vw;
+    width: 100%;
+    border: 1px solid #666;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    
+.fee-flame th {
+        font-weight: normal;
+        line-height: 3;
+        width: calc(100%/3);
+        border: 1px solid #666;
+    }
+    
+.fee-flame thead th {
+        font-weight: bold;
+        background-color: #eee;
+    }
+
+.fee-flame td {
+        line-height: 3;
+        width: calc(100%/3);
+        border: 1px solid #666;
+    }
+    
+    
+.feetable-point {
+        font-size: 13px;
+        margin-bottom: 1vh;
+    }
+footer {
+    margin-top: 10vh;
+    padding: 8vh 0 0;
+    background-color: #29abe2;
+}
+
+.footer-l-box {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    }    
+    
+.footer-l-box h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 5vh;
+        font-weight: normal;
+    }
+
+footer ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+footer ul li {
+        width: calc(100%/5);
+        font-size: 15px;
+    }
+    
+footer ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    
+footer ul li a:hover {
+        color: yellow;
+    }
+    
+footer ul li a:hover .footer-pointer{
+        color: white;
+    }
+.copyright {
+    font-size: 11px;
+    padding: 2vh 0 0;
+    margin-top: 7vh;
+    padding-bottom: 1.2vh;
+   
+    }
+}

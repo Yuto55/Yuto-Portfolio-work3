@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*ウィンドウ幅が599px以下の場合に適用するcss*/
+
+@media screen and (max-width: 599px) {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 游ゴシック体, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+    width: 100%;
+    font-size: clamp(14px, 15px, 17px);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+    
+
+header {
+    border-top: 3px solid #666;
+}
+
+header h1 {
+    font-size: 2.8vw;
+    line-height: 2;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+}
+
+.home a {
+    text-decoration: none;
+    color: #000;
+    }
+    
+.home:hover {
+    opacity: 0.8;
+    }    
+
+ header ul {
+    display: flex;
+     list-style-type: none;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+header ul li {
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1vh 0;
+    width: calc(100%/5);
+    margin: 0 auto;
+}
+    
+.current {
+    background-color:  #d3d3d3; 
+    }
+
+.current:hover a {
+    color: #eee;
+    }
+    
+header ul li:first-child {
+    border-left: none;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+header ul a:hover {
+    color: #ccc;
+}
+    
+.contact-title {
+    background-color: #eee8aa;
+    font-size: 30px;
+    padding: 10vh 6.5vw;
+    }
+    
+.contact-point {
+    text-align: center;
+    margin: 8vh auto 5vh;
+    font-size: 16px;
+    }
+    
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    }
+    
+table th,table td {
+    border: 1px solid #ccc;
+    }
+
+table th {
+    padding: 2vh 2vw;
+    text-align: left;
+    background-color: #f1f0ef;
+    }
+    
+table td {
+    width: 80%;
+    padding: 2vh 2vw;
+    }
+    
+table td p {
+    margin: 1.5vh 0;
+    font-size: 15px;
+    }
+
+label {
+    font-size: 18px;
+    margin-right: 2vw;
+    }
+    
+.empty {
+    width: 90%;
+    }
+    
+.submit {
+    text-align: center;
+    margin: 4vh auto;
+    }
+    
+.submit input {
+        padding: 1vh 2vw;
+        font-size: 24px;
+        background-color: #f8ab0b;
+        border-bottom: 4px solid #f8ab0b;
+        color: #fff;
+        border-radius: 3px;
+        text-decoration: none;
+        border: 0px;
+    }
+    
+textarea {
+    width: 95%;
+    }
+    
+footer {
+    margin-top: 10vh;
+    padding: 8vh 0 0;
+    background-color: #29abe2;
+}
+
+.footer-l-box {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    }    
+    
+.footer-l-box h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 5vh;
+        font-weight: normal;
+    }
+
+footer ul {
+        list-style-type: none;
+    }
+    
+footer ul li {
+        width: calc(100%/5);
+        font-size: 12px;
+        margin: 1.2vh auto;
+    }
+    
+footer ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    
+footer ul li a:hover {
+        color: yellow;
+    }
+    
+footer ul li a:hover .footer-pointer{
+        color: white;
+    }
+
+
+.copyright {
+    font-size: 11px;
+    padding: 2vh 0 0;
+    margin-top: 7vh;
+    padding-bottom: 1.2vh;
+   
+    }
+
+}

@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/*ウィンドウ幅が900px以上の場合に適用するcss*/
+
+@media screen and (min-width:900px) {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    width: 100%;
+    font-size: clamp(17px, 20px, 24px);
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #faf9f8;
+}
+
+header {
+    border-top: 3px solid #666;
+}
+
+header h1 {
+    font-size: 2.5vw;
+    line-height: 2;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+}
+    
+.home a {
+    text-decoration: none;
+    color: #000;
+    }
+    
+.home:hover {
+    opacity: 0.8;
+    }
+
+ header ul {
+    display: flex;
+     list-style-type: none;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+header ul li {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1vh 0;
+    width: calc(100%/5);
+    margin: 0 auto;
+}
+
+header ul li:first-child {
+    border-left: none;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+header ul a:hover {
+    color: #ccc;
+}
+
+.text-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+header div p {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size:3vw;
+    color: white;
+}
+
+.corona {
+    width: 85%;
+    margin: 4vh auto 2vh;
+    padding: 8vh 5vw;
+    background-color: antiquewhite;
+}
+.corona h2 {
+    color: red;
+}
+
+.corona p {
+    margin: 2vh 0;
+}
+
+.corona li {
+    margin: 1vh 0;
+}
+
+.news {
+    padding: 1vh;
+    background-color: #666;
+    margin: 3vh 2vw 1vh;
+    color: white;
+    width: 95%;
+    font-size: 24px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+.news::first-letter {
+    border-left: 2px solid #eee;
+    padding-left:1vw;
+    margin-left: 1vw;
+}
+
+main dl {
+    line-height: 2;
+    padding: 1vh 1.8vw;
+    margin-left: 3vw;
+}
+
+main dl dt {
+    float: left;
+    margin-right: 1.5vw;
+}
+
+main dl dd {
+    border-bottom: 1px solid #ccc;
+    width: 95%;
+}
+
+main dl dd a {
+    text-decoration: none;
+    color: #000;
+}
+
+main dl dd a:hover {
+     color: #ccc;
+}
+
+.about-box {
+    clear: both;
+    width: 80%;
+    margin: 5vh auto;
+}
+
+.about-box h2 {
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.about {
+    margin: 3vh auto 1.5vh;
+    padding: 2vh;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    background: url(../images/back-img.png) center no-repeat;
+    box-sizing: border-box;
+}
+
+.about-box p {
+    margin: 3vh 6vw;
+    font-size: 16px;
+}
+
+.about-img-box {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-img-box img {
+    text-align: center;
+    width: 24%;
+    margin: 3vh auto;
+}
+
+.consal-title {
+    margin: 3vh auto 1.5vh;
+    padding: 2vh;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    background: url(../images/back-img.png) center no-repeat;
+    box-sizing: border-box;
+}
+
+.consal-box h2 {
+    text-align: center;
+    margin: 3vh 0;
+}
+
+.consal-box p {
+    margin: 1vh 6vw;
+    text-align: center;
+}
+    
+.point {
+        font-weight: bold;
+    } 
+
+.consal-l {
+   margin: 10vh auto;
+    text-align: center;
+    }    
+
+.consal-l a {
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5vh 5vw;
+    color: white;
+    background-color: #429ed5;
+    }
+    
+.consal-l a:hover {
+    opacity: 0.8;
+    }
+    
+.lawyer-box {
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+.lawyer-box h2 {
+        margin: 10vh 0 5vh;
+    }
+    
+.lawyer-box img {
+        text-align: center;
+        width: 45%;
+    }
+
+.lawyer-n {
+    display: block;
+    margin: 2vh auto;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    }    
+
+    
+.lawyer-box a {
+     text-decoration: none;
+    }
+    
+    .lawyer-box a:hover .lawyer-n {
+        color: #ccc;
+    }
+    
+.access-box {
+    margin: 24vh 20vh;
+    display: flex;
+    }
+    
+.access-address {
+    margin-top: 4vh;
+    text-align: center;
+    width: 50%;
+    }
+    
+    
+.access-t {
+    border-bottom: 2px solid #666;
+    }
+
+.access-address h2 {
+        margin-bottom: 5vh;
+        font-size: 20px;
+    }
+  
+.access-address p {
+    line-height: 2.2;
+    font-size: 18px;
+    }
+    
+.access-box iframe {
+    width: 50vw;
+    height: 50vh;
+    margin-left: 3vw;
+    }
+    
+.practice-flame {
+    background-color: #eef6fc;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    }
+    
+.practice-title {
+    margin: 5vh auto 6vh;
+    padding: 2vh;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    background: url(../images/back-img.png) center no-repeat;
+    box-sizing: border-box;
+    }
+    
+.practice-flame h2 {
+    text-align: center;
+    }
+.practice-flame p {
+    margin-top: 7vh;
+    text-align: center;
+    font-size: 18px;
+    }
+        
+.practice-box {
+    display: flex;
+    margin: 7vh auto;
+    font-size: 15px;
+    width: 80%;
+    }
+    
+.practice-box ul {
+    margin: 1vh auto;
+    list-style-type: none;
+    }
+    
+.practice-box ul li {
+    line-height: 2;
+    }
+    
+footer {
+    margin-top: 10vh;
+    padding: 8vh 0 0;
+    background-color: #29abe2;
+}
+
+.footer-l-box {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    }    
+    
+.footer-l-box h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 5vh;
+        font-weight: normal;
+    }
+
+footer ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+footer ul li {
+        width: calc(100%/6);
+        font-size: 15px;
+    }
+    
+footer ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    
+footer ul li a:hover {
+        color: yellow;
+    }
+    
+footer ul li a:hover .footer-pointer{
+        color: white;
+    }
+.copyright {
+    font-size: 11px;
+    padding: 2vh 0 0;
+    margin-top: 7vh;
+    padding-bottom: 1.2vh;
+   
+    }
+}

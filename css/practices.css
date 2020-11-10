@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/*ウィンドウ幅が900px以上の場合に適用するcss*/
+
+@media screen and (min-width:900px) {
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    width: 100%;
+    font-size: clamp(14px, 15px, 17px);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+    
+    body p {
+        font-family: 游ゴシック体, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+    }
+
+header {
+    border-top: 3px solid #666;
+}
+
+header h1 {
+    font-size: 2.5vw;
+    line-height: 2;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+}
+
+.home a {
+    text-decoration: none;
+    color: #000;
+    }
+    
+.home:hover {
+    opacity: 0.8;
+    }    
+
+ header ul {
+    display: flex;
+     list-style-type: none;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+header ul li {
+    font-size: 17px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1vh 0;
+    width: calc(100%/5);
+    margin: 0 auto;
+}
+    
+.current {
+    background-color:  #d3d3d3; 
+    }
+
+.current:hover a {
+    color: #eee;
+    }
+    
+header ul li:first-child {
+    border-left: none;
+}
+
+header ul a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+header ul a:hover {
+    color: #ccc;
+}
+    
+.practice-title {
+    background-color: #deb887;
+    font-size: 40px;
+    padding: 15vh 6.5vw;
+    }
+    
+.indivisual-flame {
+    width: 85%;
+    margin: 8vh auto;
+    background-color: #faf9f8;
+    }
+    
+
+.i-title {
+    margin: 3vh auto 5vh;
+    padding: 2vh;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    background: url(../images/back-img.png) center no-repeat;
+    box-sizing: border-box;
+}
+    
+.indivisual-all {
+        width: 100%;
+        background-color: #faf9f8;
+        margin-top: 0;
+        padding-bottom: 1vh;
+    }    
+    
+.indivisual-title {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5vh;
+    }
+
+main h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 5vh 0;
+}
+
+.i-point {
+    text-align: center;
+    margin-bottom: 1vh;
+    font-size: 17px;
+    }
+    
+main h3 {
+    text-align: center;
+    margin: 8vh 0;
+    font-size: 24px;
+    }
+    
+.indivisual-box {
+    display: flex;
+    width: 100%;
+    }
+    
+.indivisual-child {
+        width: 48%;
+        margin: 0 auto;
+
+    }
+.child-box {
+    width: 90%;
+    margin: 3vh 2vw;
+    padding: 2vh 2vw 2vh 3vw;
+    background-color: #fff;
+    box-sizing: border-box;
+    }
+
+    .corporate-all {
+        width: 100%;
+        background-color: #fff;
+    }    
+
+.corporate-title {
+    width: 85%;
+    margin: 0 auto;
+    }
+    
+.corporate-flame {
+    width: 85%;
+    margin: 2vh auto;
+    background-color: #fff;
+    }
+
+.child-box2 {
+    width: 90%;
+    margin: 3vh 1vw;
+    padding: 2vh 2vw 2vh 3vw;
+    background-color: #faf9f8;
+    box-sizing: border-box;
+    }
+
+.child-point {
+    margin: 2vh 0;
+    line-height: 1.8;
+    
+    }
+    
+.child-point::before {
+    content: "";
+    border-left: 3px solid #429ed5;
+    left: -1.5vw;
+    position: relative;
+    }
+    
+.indivisual-box-last {
+    position: relative;
+    left: -19.85vw;
+    bottom: 5vh;
+}
+
+.c-title {
+    margin: 3vh auto 5vh;
+    padding: 2vh;
+    text-align: center;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    background: url(../images/back-img.png) center no-repeat;
+    box-sizing: border-box;
+}
+
+.c-point {
+    text-align: center;
+    margin-bottom: 1vh;
+    font-size: 17px;
+    }
+
+ 
+.corporate-box {
+    display: flex;
+    width: 100%;
+    }
+    
+.corporate-child {
+        width: 48%;
+        margin: 0 auto;
+    }
+
+footer {
+    margin-top: 10vh;
+    padding: 8vh 0 0;
+    background-color: #29abe2;
+}
+
+.footer-l-box {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    }    
+    
+.footer-l-box h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 5vh;
+        font-weight: normal;
+    }
+
+footer ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+footer ul li {
+        width: calc(100%/5);
+        font-size: 15px;
+    }
+    
+footer ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    
+footer ul li a:hover {
+        color: yellow;
+    }
+    
+footer ul li a:hover .footer-pointer{
+        color: white;
+    }
+.copyright {
+    font-size: 11px;
+    padding: 2vh 0 0;
+    margin-top: 7vh;
+    padding-bottom: 1.2vh;
+   
+    }
+    
+
+}

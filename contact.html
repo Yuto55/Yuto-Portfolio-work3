@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>法律事務所</title>
+    <!--ビューポートの設定(あらゆるデバイスで等倍(1倍)で表示してという意味)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--※PCのスタイル(900px以上の時はstyle.cssを読み込み)-->
+        <link rel="stylesheet" type="text/css" href="css/contact.css" media="screen and (min-width:900px)">
+        
+        <!--※タブレット用のスタイル(600pxから899pxの時はtablet.css)-->
+        <link rel="stylesheet" href="css/c-tablet.css" media="screen and (max-width:899px) and (min-width:600px)">
+        
+        <!--※スマートフォン用のスタイル(599px以下の時はsmart.cssを読み込み)-->
+        <link rel="stylesheet" href="css/c-smart.css" media="screen and (max-width:599px)">
+    
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="home"><a href="index.html">中島公園法律事務所</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">事務所案内</a></li>
+                <li><a href="lawyer.html">弁護士紹介</a></li>
+                <li><a href="fees.html">弁護士費用</a></li>
+                <li><a href="practices.html">取扱業務一覧</a></li>
+                <li class="current"><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+            <h2 class="contact-title">お問い合わせ</h2>
+    </section>
+    <main>
+        <p class="contact-point">下記の必要項目にご入力のうえ、「確認画面に進むボタン」を押してください。</p>
+        <form action="program.php" method="post">
+        <table>
+            <tr>
+                <th>ご用件</th>
+                <td>
+                    <label><input type="radio" name="category" value="法律相談の申込み" required>法律相談の申込み</label>
+                     <label><input type="radio" name="category" value="お問い合わせ" required>お問い合わせ</label>
+                </td>
+            </tr>
+            <tr>
+                <th>お名前</th>
+                <td>
+                    <input type="text" name="name" class="empty" required>
+                    <p>※フルネームでご入力ください</p>
+                </td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td>
+                    <input type="tel" name="tel" class="empty" required>
+                    <p>※ハイフンを含めてご入力ください</p>
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td>
+                    <input type="email" name="email" class="empty" required>
+                    <p>※確認のためにもう一度入力して下さい。</p>
+                    <input type="email" name="email" class="empty" required>
+                </td>
+            </tr>
+            <tr>
+                <th>希望連絡手段</th>
+                <td>
+                    <label><input type="radio" name="contact" value="電話" required>電話</label>
+                     <label><input type="radio" name="contact" value="メール" required>メール</label>
+                    <label><input type="radio" name="contact" value="どちらでも" required>どちらでも</label>
+                </td>
+            </tr>
+            <tr>
+                <th>相談内容</th>
+                <td><textarea name="comment" cols="20" rows="24"></textarea></td>
+            </tr>
+        </table>
+        <p class="submit"><input type="submit" name="submit" value="確認画面に進む"></p>
+    </form>
+    </main>
+    <footer>
+        <div class="footer-l-box">
+                <h2>中島公園法律事務所</h2>
+            <ul>
+                <li><a href="index.html"><span class="footer-pointer">&gt;</span>HOME</a></li>
+                <li><a href="about.html"><span class="footer-pointer">&gt;</span>事務所案内</a></li>
+                <li><a href="lawyer.html"><span class="footer-pointer">&gt;</span>弁護士紹介</a></li>
+                <li><a href="fees.html"><span class="footer-pointer">&gt;</span>弁護士費用</a></li>
+                <li><a href="practices.html"><span class="footer-pointer">&gt;</span>取り扱い業務一覧</a></li>
+                <li><a href="#"><span class="footer-pointer">&gt;</span>お問い合わせ</a></li>
+            </ul>
+            <p class="copyright"><small>copyright 2020 中島公園法律事務所 all rights reserved.</small></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
