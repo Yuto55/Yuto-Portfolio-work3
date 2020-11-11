@@ -96,7 +96,6 @@ header div p {
     margin: 4vh auto 2vh;
     padding: 8vh 5vw;
     background-color: antiquewhite;
-    box-sizing: border-box;
 }
 .corona h2 {
     color: red;
@@ -105,11 +104,11 @@ header div p {
 
 .corona p {
     margin: 2vh 0;
-    font-size: 16px;
 }
 
 .corona li {
     margin: 1vh 0;
+    box-sizing: border-box;
 }
 
 .news {
