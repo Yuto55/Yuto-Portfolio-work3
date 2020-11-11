@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     background-color: #faf9f8;
+    box-sizing: border-box;
 }
 
 header {
@@ -96,7 +97,6 @@ header div p {
     margin: 4vh auto 2vh;
     padding: 8vh 5vw;
     background-color: antiquewhite;
-    overflow: hidden;
 }
 .corona h2 {
     color: red;
