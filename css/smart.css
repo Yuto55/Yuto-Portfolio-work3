@@ -96,6 +96,7 @@ header div p {
     margin: 4vh auto 2vh;
     padding: 8vh 5vw;
     background-color: antiquewhite;
+    box-sizing: border-box;
 }
 .corona h2 {
     color: red;
